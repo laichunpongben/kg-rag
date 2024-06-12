@@ -1,3 +1,4 @@
+# rag/indexer.py
 from llama_index.core import (
     SimpleDirectoryReader,
     VectorStoreIndex,

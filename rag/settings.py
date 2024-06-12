@@ -1,3 +1,4 @@
+# rag/settings.py
 import os
 
 from llama_index.core import Settings
