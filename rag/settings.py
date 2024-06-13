@@ -7,7 +7,6 @@ from llama_index.llms.gemini import Gemini
 
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
-from .settings import *
 from .configs.secret import GOOGLE_API_KEY
 
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
