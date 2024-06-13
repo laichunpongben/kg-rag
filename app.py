@@ -30,8 +30,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-rag = RAG()
-
 
 @app.get("/")
 async def root():

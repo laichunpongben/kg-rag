@@ -10,7 +10,6 @@ from llama_index.core import (
 )
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.response_synthesizers import TreeSummarize
-
 from llama_index.vector_stores.qdrant import QdrantVectorStore
 
 from qdrant_client import AsyncQdrantClient
