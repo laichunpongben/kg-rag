@@ -20,6 +20,7 @@ from .prompt_template import chat_prompt_tmpl, qa_prompt_tmpl
 from .configs.secret import (
     QDRANT_HOST,
     QDRANT_API_KEY,
+    QDRANT_COLLECTION_NAME,
 )
 
 
@@ -34,7 +35,9 @@ class RAG:
             host=QDRANT_HOST, port=6333, api_key=QDRANT_API_KEY, timeout=60
         )
         self.vector_store = QdrantVectorStore(
-            aclient=self.aclient, collection_name="mtr", prefer_grpc=True
+            aclient=self.aclient,
+            collection_name=QDRANT_COLLECTION_NAME,
+            prefer_grpc=True,
         )
         self.index = VectorStoreIndex.from_vector_store(self.vector_store)
 
